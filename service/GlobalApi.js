@@ -12,11 +12,12 @@ const axiosClient=axios.create({
 })
 
 
-const CreateNewResume=(payload)=>axiosClient.post('/articles', { data:payload });
-const GetUserResumes=(userEmail)=>axiosClient.get(`/articles?filters[userEmail][$eq]=${userEmail}`);
-const GetResumeById=(resumeId)=>axiosClient.get(`/articles/${resumeId}`);
+const CreateNewResume=(payload)=>axiosClient.post('/user-resumes', { data:payload });
+const GetUserResumes=(userEmail)=>axiosClient.get(`/user-resumes?filters[userEmail][$eq]=${userEmail}`);
+const GetResumeById=(resumeId)=>axiosClient.get(`/user-resumes/${resumeId}`);
 
 export default{
     CreateNewResume,
-    GetUserResumes
+    GetUserResumes,
+    GetResumeById
 }
