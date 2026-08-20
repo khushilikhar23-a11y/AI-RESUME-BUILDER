@@ -1,16 +1,43 @@
-# React + Vite
+# 🚀 AI-Powered Resume Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intelligent web application built to help users craft professional, ATS-friendly resumes effortlessly using Generative AI.
 
-Currently, two official plugins are available:
+## ✨ Features
+* **AI Content Generation:** Generate professional summaries, work experiences, and skill sets tailored to specific job roles using Gemini API.
+* **Real-time Preview:** See your resume update instantly as you fill in your details.
+* **Customization:** Multiple templates, color schemes, and formatting options.
+* **Secure Authentication:** Seamless user login and management powered by Clerk.
+* **Export Options:** Download your finished resume cleanly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+* **Frontend:** React, Vite, Tailwind CSS
+* **Backend/Database:** Convex / Context API
+* **AI Integration:** Google Gemini API
+* **Authentication:** Clerk
 
-## React Compiler
+## 📂 Project Structure
+```text
+ai-resume-builder/
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+├── package.json
+└── README.md
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚙️ Installation & Setup
+1. Install dependencies:
+   npm install
 
-## Expanding the ESLint configuration
+2. Set up Environment Variables:
+Create a .env file in the root directory and add your API keys:
+   VITE_STRAPI_API_KEY=your_gemini_api_key_here
+   VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key_here
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Run the development server:
+   npm run dev
+
