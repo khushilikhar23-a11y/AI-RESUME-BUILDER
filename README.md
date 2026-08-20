@@ -7,11 +7,11 @@ An intelligent web application built to help users craft professional, ATS-frien
 * **Real-time Preview:** See your resume update instantly as you fill in your details.
 * **Customization:** Multiple templates, color schemes, and formatting options.
 * **Secure Authentication:** Seamless user login and management powered by Clerk.
-* **Export Options:** Download your finished resume cleanly.
 
 ## 🛠️ Tech Stack
 * **Frontend:** React, Vite, Tailwind CSS
-* **Backend/Database:** Convex / Context API
+* **Backend / CMS:** Strapi
+* **Database:** PostgreSQL
 * **AI Integration:** Google Gemini API
 * **Authentication:** Clerk
 
@@ -35,8 +35,12 @@ ai-resume-builder/
 
 2. Set up Environment Variables:
 Create a .env file in the root directory and add your API keys:
-   VITE_STRAPI_API_KEY=your_gemini_api_key_here
+   VITE_STRAPI_API_KEY=your_stapi_api_key_here
    VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key_here
+   VITE_GEMINI_API_KEY=your_gemini_api_key_here
+
+3. Run the Backend(Strapi):
+   npm run develop
 
 3. Run the development server:
    npm run dev
